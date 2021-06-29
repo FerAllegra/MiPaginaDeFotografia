@@ -1,0 +1,32 @@
+/*Grid */
+
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;/*oculto los elementos para mostrarlos luego con js*/
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas{/*esta clase la agrego con js para que me muestre las imagenes una vez que estan todas cargadas*/
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+.grid .item-contenido{
+    position: relative;
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;/*para quitarle un margen vertical que tiene las imagenes*/
+    
+}
+
